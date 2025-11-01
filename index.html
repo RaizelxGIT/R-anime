@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R-anime</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/1b20b04c49.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>R-anime <i class="fa-solid fa-cloud-bolt"></i></header>
+
+    <div id="searchDiv">
+        <input placeholder="Search..." type="text" id="searchText">
+        <div id="genreDiv">
+        <select id="genreSelect1">
+            <option value="1">Action</option>
+            <option value="2">Adventure</option>
+            <option value="4">Comedy</option>
+            <option value="8">Drama</option>
+            <option value="10">Fantasy</option>
+            <option value="22">Romance</option>
+            <option value="14">Horror</option>
+            <option value="27">Shounen</option>
+            <option value="37">Supernatural</option>
+            <option value="30">Sports</option>
+            <option value="24">Sci-Fi</option>
+        </select>
+            <select id="genreSelect2">
+            <option value="1">Action</option>
+            <option value="2">Adventure</option>
+            <option value="4">Comedy</option>
+            <option value="8">Drama</option>
+            <option value="10">Fantasy</option>
+            <option value="22">Romance</option>
+            <option value="14">Horror</option>
+            <option value="27">Shounen</option>
+            <option value="37">Supernatural</option>
+            <option value="30">Sports</option>
+            <option value="24">Sci-Fi</option>
+        </select><br>
+            <select id="genreSelect3">
+            <option value="1">Action</option>
+            <option value="2">Adventure</option>
+            <option value="4">Comedy</option>
+            <option value="8">Drama</option>
+            <option value="10">Fantasy</option>
+            <option value="22">Romance</option>
+            <option value="14">Horror</option>
+            <option value="27">Shounen</option>
+            <option value="37">Supernatural</option>
+            <option value="30">Sports</option>
+            <option value="24">Sci-Fi</option>
+        </select>
+            <select id="quantity">
+            <option value="6">6</option>
+            <option value="9">9</option>
+            <option value="12">12</option>
+            <option value="20">20</option>
+            <option value="30">30</option>
+            <option value="50">50</option>
+        </select><br>
+        <button onclick="searchGenres()">Search Genre</button>
+        </div>
+        <button id="selectGenres" onclick="selectGenres()"><abbr style="text-decoration: none;" title="self query: search 'raiquery=genre_id.limit'">Select Genre(s) Instead?</abbr></button>
+    </div>
+
+    <main id="resultsContainer"></main>
+<p style="text-align: center;">&copy; Raizel 2025.</p>
+    <script src="functions.js"></script>
+</body>
+</html>
